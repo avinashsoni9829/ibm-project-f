@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Template</title>
+    <!--Tailwind css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+
+    <!-- Custom Css --> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/donation.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  
+  </head>
+  <body>
+
+    <!--Header-->
+    <nav class="flex bg-white flex-wrap items-center justify-between p-4">
+      <div class="lg:order-2 w-auto lg:w-1/5 lg:text-center">
+        
+          
+        <h1 class="font-mono  text-3xl">FUNDMED</h1>
+      </div>
+      
+      <div class="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="../index.html">
+              Home
+          </a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="../aboutus.html">
+              About Us
+          </a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="../resources/index.html">
+             Resources
+          </a>
+        </div>
+      <div class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+
+      
+        <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="./fundraise.html">
+             Donate 
+          </a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="../donationPage/index.html">
+            Fund Me 
+         </a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="../covid checker/version1/covid-1.html">
+            Covid Checker
+          </a>
+          
+        <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="../medical camps/bloodDonation.html">
+          Medical Camps
+       </a>
+         
+      </div>
+  </nav>
+
+    <div class="ugf-wraper">
+      <div class="content-block">
+        
+        <div class="logo">
+          <img src="images/logo.png" class="img-fluid" alt="">
+        </div>
+       
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 offset-lg-7">
+            <div class="form-steps active">
+              <div class="form-block">
+                <div class="donation-header">
+                  <h2>Donation Amount</h2>
+                  <p>1/3</p>
+                </div>
+                <form action="donation-2.html" class="donation-form">
+                  <div class="amount-select">
+                    <label for="#">Select amount</label>
+                    <div class="amount-preset">
+                      <span>₹25</span>
+                      <span>₹50</span>
+                      <span>₹100</span>
+                      <span>₹500</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="custom-donation">OR, Type Custom amount</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="validatedInputGroupPrepend">₹</span>
+                      </div>
+                      <input type="text" class="form-control custom-donation" id="custom-donation" aria-describedby="validatedInputGroupPrepend" placeholder="0.00">
+                    </div>
+                  </div>
+                  <div class="form-group donation-period">
+                    <div class="custom-radio">
+                      <input type="radio" name="donation-type" class="custom-control-input" id="monthly" required>
+                      <label class="custom-control-label" for="monthly">Monthly Donation <span>We will automaticcally receive your gift each month</span></label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" name="donation-type" class="custom-control-input" id="yearly" required>
+                      <label class="custom-control-label" for="yearly">One Time <span>Make this donation in honor or memory of someone</span></label>
+                    </div>
+                  </div>
+                  <button class="btn step-btn">Next Step &nbsp; &#10140;</button>
+                </form>
+              </div>
+            </div>
+            <div class="form-steps">
+              <div class="form-block">
+                <div class="donation-header">
+                  <h2>Billing Details</h2>
+                  <p>2/3</p>
+                </div>
+                <form action="#" class="donation-form">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="fName">First Name</label>
+                        <input type="text" class="form-control" id="fName" placeholder="John">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="lName">Last Name</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Doe">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group country-select">
+                    <label for="inputCountry">Your Country</label>
+                    <div class="select-input choose-country">
+                      <span></span>
+                        <select id="inputCountry" class="form-control">
+                          <option value="">Country</option>
+                          <option value="">India</option>
+                          <option value="">USA</option>
+                          <option value="">England</option>
+                          <option value="">France</option>
+                          <option value="">Germany</option>
+                          <option value="">Spain</option>
+                          <option value="">Netherland</option>
+                          <option value="">Singapur</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputCity">Your City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="e.g. New York">
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="address1">Address Line 1</label>
+                        <input type="text" class="form-control" id="address1" placeholder="e.g. 2707 Par Drive">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="address2">Address Line 2</label>
+                        <input type="text" class="form-control" id="address2" placeholder="e.g. Los Angeles, CA 900">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="inputPost">Post Code</label>
+                        <input type="text" class="form-control" id="inputPost" placeholder="E.g. 0000">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="inputPhone">Phone Number <span class="lite">(Optional)</span></label>
+                        <input type="text" class="form-control" id="inputPhone" placeholder="E.g. 000 0000 0000">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn step-btn">Next Step &nbsp; &#10140;</button>
+                </form>
+              </div>
+            </div>
+            <div class="form-steps">
+              <div class="form-block">
+                <div class="donation-header">
+                  <h2>Payment Method</h2>
+                  <p>3/3</p>
+                </div>
+                <form action="donation-complete.html" class="donation-form">
+                  <div class="form-group">
+                    <label for="inputCard">Card Number</label>
+                    <input type="text" class="form-control" id="inputCard" placeholder="e.g. 0000 0000 0000 0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputHolder">Cardholder name</label>
+                    <input type="text" class="form-control" id="inputHolder" placeholder="e.g. John Doe">
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="inputExpire">Expiry date</label>
+                        <input type="text" class="form-control" id="inputExpire" placeholder="e.g. MM/YY">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="inputCCV">CCV Code</label>
+                        <input type="text" class="form-control" id="inputCCV" placeholder="e.g. 000">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-100">Send Your Donation &nbsp; &#10084;</button>
+                </form>
+                
+                <div class="ugf-block-separator">
+                  <p>Or</p> 
+                </div>
+                <!-- <div class="alternet-payment">
+                  <a href="#" class="btn">Donate with <img src="images/paypal.png" class="img-fluid" alt=""></a>
+                </div> -->
+                <div id="paypal-button-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AQ1gmcGnHItgebWw3SyRG6S_jmR9djg2wPWz34CqsCUnE_d-LFZ3Cvfsy4x0LbCpzgLLpglL24XjIMRN"> </script> -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ATi3w3PMJJMqIUBA2qi_VyNbQU2Zjqkx6JGzBtA7BBgcCNeBgMumfj2D1q5dM6f6G1owC3Qp0hE3rxZQ&disable-funding=credit,card"> </script>
+
+    <script src="js/paypal.js"></script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- Add the checkout buttons, set up the order and approve the order -->
