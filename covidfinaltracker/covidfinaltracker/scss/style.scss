@@ -1,0 +1,103 @@
+/* -------------------------------------
+
+[Master Stylesheet]
+
+Template Name: Corot - Coronavirus Data Traker Admin Dashboard
+Version: v1.0.0
+
+[Table of Contents]
+    
+    * Google Fonts
+    * Include Third Party CSS Library
+        + Bootstrap CSS
+        + Classynav CSS
+        + Owl Carousel CSS
+        + Animate CSS
+        + Nice Select CSS
+        + jQuery UI CSS
+    * Include Web Icon Fonts
+        + Themify Icons
+        + Font Awesome
+        + Pe 7 Stroke
+        + Elegant Icons
+        + Material Design Iconic Font
+        + Etline
+    * Template Mixins
+        + Flex
+        + Miscellaneous
+    * Template Responsive
+    * Template Variables
+    * Template Colors
+    * Core Styles
+        + Reboot CSS
+            + Reset Styles
+        + Bootstraping CSS
+            + Header CSS
+            + Sidebar CSS
+            + Footer CSS
+
+    * General Pages
+        + Index
+        + Chart
+        + Widgets
+        + Table
+        + Password
+        + Preloader
+        + Scrool
+        + Setting
+        + Blog
+        + Coming-soon
+        + 404
+
+------------------------------------- */
+
+/* -------------------------------------
+
+# [font-family]
+
+'Poppins', sans-serif;
+'Roboto', sans-serif;
+------------------------------------- */
+
+/* Import Fonts & CSS Files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+@import url(css/bootstrap.min.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/animate.css);
+@import url(css/nice-select.css);
+@import url(css/jquery-ui.min.css);
+
+// Web Icons
+@import url(css/default-assets/themify-icons.css);
+@import url(css/magnific-popup.css);
+@import url(css/default-assets/boxicons.min.css);
+@import url(css/font-awesome.min.css);
+@import url(css/pe-icon-7-stroke.min.css);
+@import url(css/style.css);
+@import url(css/material-design-iconic-font.min.css);
+@import url(etline/style.css);
+
+// Template Mixins, Variables & Responsive
+@import "flex";
+@import "miscellaneous";
+@import "responsive";
+@import "variables";
+@import "colors";
+
+// Components
+@import "index";
+@import "chart";
+@import "widgets";
+@import "table";
+@import "password";
+@import "preloader";
+@import "scrool";
+@import "setting";
+@import "blog";
+@import "coming-soon";
+@import "404";
+
+// Core Styles
+@import "reboot";
+@import "bootstraping";

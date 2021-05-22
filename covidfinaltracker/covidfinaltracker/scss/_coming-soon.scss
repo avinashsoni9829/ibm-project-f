@@ -1,0 +1,198 @@
+/* :: Coming Soon CSS */
+
+.coming-soon-area {
+    @include display-flex(flex);
+    @include align-items-center;
+    @include flex-wrap(wrap);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    .logo-area {
+        a {
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+
+}
+
+.coming-soon-content {
+    position: relative;
+    z-index: 1;
+    @include flex-direction-column(column);
+    padding: 50px 0;
+    min-height: 100vh;
+    width: 100%;
+
+    .text-form-area {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            color: $white-color;
+            font-size: 70px;
+            font-weight: 600;
+            margin-top: 15px;
+
+            @media #{$breakpoint-xs} {
+                font-size: 42px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: $white-color;
+        }
+
+        .news-letter-area {
+            margin-top: 80px;
+
+            .cs-form {
+                position: relative;
+                z-index: 1;
+
+
+                .form-control {
+                    background-color: $white-color;
+                    height: 60px;
+                    border: none;
+                    @include box-shadow (0px 24px 38px 0px rgba(62, 89, 96, 0.18));
+                    border-radius: 5px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                button {
+                    border: none;
+                    height: 60px;
+                    width: 200px;
+                    background-color: $blue-color;
+                    color: $white-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    position: absolute;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    top: 0;
+                    right: 0;
+                    z-index: 22;
+                    border-radius: 0 5px 5px 0;
+                    @include transition-duration(500ms);
+
+                    @media #{$breakpoint-xs} {
+                        width: 100px;
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-info-area {
+        p {
+            display: block;
+            margin-bottom: 10px;
+            color: $white-color;
+            font-size: 18px;
+        }
+
+        a {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            color: $white-color;
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            @include transition-duration(500ms);
+
+            &:hover {
+                background-color: $blue-color;
+            }
+        }
+    }
+
+    .countdown-timer {
+        margin-top: 90px;
+        padding: 50px;
+        border-radius: 3px;
+
+        @media #{$breakpoint-xs} {
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        #clock {
+            @include display-flex(flex);
+
+            div {
+                position: relative;
+                z-index: 1;
+                font-size: 90px;
+                line-height: 1;
+                font-weight: 600;
+                @include flex(0 0 25%);
+                max-width: 25%;
+                width: 25%;
+                color: $white-color;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 30px;
+                }
+
+                @media #{$breakpoint-sm} {
+                    font-size: 50px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 60px;
+                }
+
+                @media #{$breakpoint-lg} {
+                    font-size: 60px;
+                }
+
+                &::after {
+                    content: ":";
+                    position: absolute;
+                    bottom: 20px;
+                    right: 0;
+                    font-size: 20px;
+                    color: $white-color;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                span {
+                    margin-top: 5px;
+                    font-size: 24px;
+                    color: $white-color;
+                    font-weight: 400;
+                    display: block;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+
+                    @media #{$breakpoint-xs} {
+                        font-size: 10px;
+                    }
+                     @media #{$breakpoint-sm} {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
