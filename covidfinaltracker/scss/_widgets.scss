@@ -1,0 +1,31 @@
+/* :: Widget CSS */
+
+.section-title.t_center {
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.section-title h2 {
+	font-size: 36px;
+	text-transform: capitalize;
+	line-height: 1.2;
+}
+.virus-symptoms-card .icon-thumb {
+	width: 60px;
+	margin: auto;
+}
+
+.virus-symptoms-card {
+	border: 1px solid rgba(60, 112, 250, 0.19);
+	padding: 30px;
+	background-color: #fff;
+	-webkit-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+.single-symptoms-content h5 a {
+	color: $heading-color;
+	display: block;
+	margin-top: 15px;
+	font-size: 20px;
+}

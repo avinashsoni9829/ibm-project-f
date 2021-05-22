@@ -1,0 +1,51 @@
+/* Table Css */
+
+.sorting_1 a {
+    color: #333;
+}
+
+.case-new {
+    color: $danger-color;
+}
+
+.table {
+    color: $text-color;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+}
+
+.table thead th {
+    font-weight: 400;
+}
+
+.page-item.active .page-link {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.new-death {
+    color: $danger-color;
+}
+
+.form-control:focus {
+    border-color: $primary;
+    outline: 0;
+    box-shadow: none;
+}
+
+.table-nowrap td,
+.table-nowrap th {
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 500;
+
+    @media #{$breakpoint-xs} {
+        font-size: 13px;
+    }
+}
+
+.table thead th {
+    border-bottom: 1px solid $border-color;
+    font-weight: 500;
+}
