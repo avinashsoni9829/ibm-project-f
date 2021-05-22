@@ -54,7 +54,7 @@
       <div class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
 
       
-        <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="./index.html">
+        <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="../fundraising/fundraise.html">
              Donate 
           </a>
           <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="./index.html">
@@ -71,7 +71,7 @@
       </div>
   </nav>
 
-     
+      <!--FORM-->
     
     <div class="ugf-wraper">
       <div class="content-block">
@@ -96,7 +96,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label for="fName">Name</label>
-                        <input type="text" class="form-control" id="fName" placeholder="John">
+                        <input type="text" class="form-control" id="fName" placeholder="John" required>
                       </div>
                     </div>
                    
@@ -105,16 +105,16 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label for="inputPost">Amount</label>
-                        <input type="text" class="form-control" id="inputPost" placeholder="E.g. ₹ 000000">
+                        <input type="text" class="form-control" id="inputPost" placeholder="E.g. ₹ 000000" required>
                       </div>
                     </div>
                    
                   </div>
                   <div class="form-group country-select">
                     <label for="inputCountry">Your Country</label>
-                    <div class="select-input choose-country">
+                    <div class="select-input choose-country" >
                       <span></span>
-                        <select id="inputCountry" class="form-control">
+                        <select id="inputCountry" class="form-control" required>
                           <option value="">Country</option>
                           <option value="">India</option>
                           <option value="">USA</option>
@@ -131,9 +131,9 @@
 
                   <div class="form-group country-select">
                     <label for="inputCountry">Reason</label>
-                    <div class="select-input choose-country">
+                    <div class="select-input choose-country" >
                       <span></span>
-                        <select id="inputCountry" class="form-control">
+                        <select id="inputCountry" class="form-control" required>
                           <option value="">Health Related</option>
                           <option value="">Finance Realted</option>
                           
@@ -145,7 +145,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label for="inputPost">PHONE Number</label>
-                        <input type="text" class="form-control" id="inputPost" placeholder="E.g. 000 0000 0000">
+                        <input type="text" class="form-control" id="inputPost" placeholder="E.g. 000 0000 0000" required>
                       </div>
                     </div>
                    
@@ -155,7 +155,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label for="inputPost">Upload Documents</label>
-                         <input type="file"  id="inputPost">
+                         <input type="file"  id="inputPost " required>
                       </div>
                     </div>
                    
